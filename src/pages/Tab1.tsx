@@ -1,4 +1,6 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, 
+  IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle,
+  IonAlert, IonButton  } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 
@@ -7,7 +9,7 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
+          <IonTitle>profile</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
@@ -16,7 +18,39 @@ const Tab1: React.FC = () => {
             <IonTitle size="large">Tab 1</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
+        <IonCard>
+        <img alt="Silhouette of mountains" src="./assets/celocia.jpg" />
+        <IonCardHeader>
+          <IonCardTitle>irish</IonCardTitle>
+          <IonCardSubtitle>student</IonCardSubtitle>
+        </IonCardHeader>
+  
+        <IonCardContent>Don't be trapped in someone else's dream</IonCardContent>
+        <IonButton id="present-alert" expand='full'>Click Me</IonButton>
+  
+  
+      </IonCard><IonAlert
+          header="Alert!"
+          trigger="present-alert"
+          buttons={[
+            {
+              text: 'Cancel',
+              role: 'cancel',
+              handler: () => {
+                console.log('Alert canceled');
+              },
+            },
+            {
+              text: 'OK',
+              role: 'confirm',
+              handler: () => {
+                console.log('Alert confirmed');
+              },
+            },
+          ]}
+          onDidDismiss={({ detail }) => console.log('Dismissed with role: ${detail.role}')}
+        ></IonAlert>
+        
       </IonContent>
     </IonPage>
   );
