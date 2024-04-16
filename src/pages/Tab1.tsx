@@ -21,7 +21,7 @@ const Tab1: React.FC = () => {
         <IonCard>
         <img alt="Silhouette of mountains" src="./assets/celocia.jpg" />
         <IonCardHeader>
-          <IonCardTitle>quicel joy</IonCardTitle>
+          <IonCardTitle>Quicel Joy</IonCardTitle>
           <IonCardSubtitle>student</IonCardSubtitle>
         </IonCardHeader>
   
