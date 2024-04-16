@@ -2,9 +2,9 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
   IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle,
   IonAlert, IonButton  } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab1.css';
+import './Profile.css';
 
-const Tab1: React.FC = () => {
+const Profile: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -21,7 +21,7 @@ const Tab1: React.FC = () => {
         <IonCard>
         <img alt="Silhouette of mountains" src="./assets/celocia.jpg" />
         <IonCardHeader>
-          <IonCardTitle>irish</IonCardTitle>
+          <IonCardTitle>Quicel Joy</IonCardTitle>
           <IonCardSubtitle>student</IonCardSubtitle>
         </IonCardHeader>
   
@@ -56,4 +56,4 @@ const Tab1: React.FC = () => {
   );
 };
 
-export default Tab1;
+export default Profile;
