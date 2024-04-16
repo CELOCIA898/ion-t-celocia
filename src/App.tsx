@@ -49,17 +49,17 @@ const App: React.FC = () => (
           <Route exact path="/home">
             <Home />
           </Route>
-          <Route exact path="/tab1">
+          <Route exact path="/Profile">
             <Tab1 />
           </Route>
-          <Route exact path="/tab2">
+          <Route exact path="/Clickcounter">
             <Tab2 />
           </Route>
-          <Route path="/tab3">
+          <Route path="/Calculator">
             <Tab3 />
           </Route>
           <Route exact path="/">
-            <Redirect to="/tab1" />
+            <Redirect to="/Home" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
@@ -67,17 +67,17 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab1" href="/tab1">
+          <IonTabButton tab="Profile" href="/tab1">
             <IonIcon aria-hidden="true" icon={personOutline} />
-            <IonLabel>Tab 1</IonLabel>
+            <IonLabel>Profile</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
+          <IonTabButton tab="Clickcounter" href="/tab2">
             <IonIcon aria-hidden="true" icon={speedometerOutline} />
-            <IonLabel>Tab 2</IonLabel>
+            <IonLabel>Clickcounter</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
+          <IonTabButton tab="Calculator" href="/tab3">
             <IonIcon aria-hidden="true" icon={calculatorOutline} />
-            <IonLabel>Tab 3</IonLabel>
+            <IonLabel>Calculator</IonLabel>
           </IonTabButton>
         </IonTabBar>
       </IonTabs>
